@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Crystal Collector HW Week 4 </title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <br>
+            <div class="col-lg-12 bg-info text-white" align="center">
+                <h1> CRYSTALS COLLECTOR </h1>
+            </div>
+            <br>
+        </div>
+        <div class="row images">
+            <div class="col-lg-3">
+                <img src="assets/images/blue.png" class=gem id="one">
+            </div>
+
+            <div class="col-lg-3">
+                <img src="assets/images/red.png" class=gem id="two">
+            </div>
+            <div class="col-lg-3">
+                <img src="assets/images/yellow.png" class=gem id="three">
+            </div>
+            <div class="col-lg-3">
+                <img src="assets/images/green.png" class=gem id="four">
+            </div>
+        </div>
+        <br>
+        <div class="row score">
+            <div class="col-lg-3 bg-primary text-white" id="match">
+				<h2>Match Me:
+					<span id="randomNumber"></span>
+				</h2>
+            </div>
+			<div class="col-lg-1">
+            </div>
+            <div class="col-lg-3 bg-success text-white" id="total">
+            	<h3 class="bg-danger" align="center"><span id="result"></span></h3>
+                <h2>Your Score:
+					<span id="totalscore"></span>
+				</h2>
+            </div>
+            <div class="col-lg-1">
+            </div>
+            <div class="col-lg-3 bg-warning text-white" id="winsAndLosses">
+                <h2>Wins:
+					<span id="numberWins"></span>
+					</br>
+					Losses: 
+					<span id="numberLosses"></span>
+				</h2>
+            </div>
+		</div>
+        <div class="row instructions">
+            <div class="col-lg-12">
+                <h3> Instructions: </h3>
+                <p>1. You will be given a random number at the start of the game</p>
+                <p>2. There are four hearts below. By clicking on a heart, you will add a specific amount of points to your total score </p>
+                <p>3. You win the game by matching your total score to the random number, You lose the game if your total score goes above the random number </p>
+                <p>4. The value of each heart is hidden from you until you click on it </p>
+                <p>5. Each time when the game starts, the game will change the values of each heart</p>
+            </div>
+        </div>
+	</div>
+
+	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+
+</body>
+</html>
